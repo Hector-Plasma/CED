@@ -9,8 +9,8 @@ class Contextual_function :
     def unit(self):
         return 1
 
-    def gaussian(self, x, k, a = 1.0) :
-        return exp(-1.0/2 * (x-k)**2/a)
+    def gaussian(self, x, k, a = 2.0) :
+        return exp(-1.0/(2) * ((x-k)/a)**2)
 
     def local(self, x, k,) :
         return 1 if (x == k) else 0
